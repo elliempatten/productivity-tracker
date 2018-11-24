@@ -1,20 +1,19 @@
 .miniStats {
-  font-size: 20px;
+  font-size: 26px;
   background: rgb(41, 48, 61);
   border-radius: 10px;
   color: #fb1;
-  padding: 30px;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  margin: 0;
   outline: solid 3px #fb1;
-  align-self: center;
-  width: 70%;
-  margin-bottom: 40px;
   outline-offset: -10px;
-
+  padding: 25px;
+  line-height: 30px;
+  flex: 1;
+  margin-right: 100px;
+  text-align: center;
 }
 
-  .listItem{
+.listItem {
   list-style: none;
-  padding-bottom: 10px;
+
 }
