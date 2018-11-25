@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux';
-import days from './days';
+import { combineReducers } from "redux";
+import goalTracking from "./goal-tracking";
 
-export default combineReducers({days});
+export default combineReducers({ goalTracking });

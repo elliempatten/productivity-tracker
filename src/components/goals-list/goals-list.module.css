@@ -1,0 +1,43 @@
+.goalsList {
+    padding: 20px;
+    flex: 4;
+    font-size: 25px;
+    padding: 25px;
+    display: flex;
+    min-height: 400px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.goalHolder {
+    box-sizing: border-box;
+    background: rgb(41, 48, 61);
+    padding: 20px;
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 220px;
+    box-shadow: grey 5px 5px 10px;
+    height: 150px;
+    color: white;
+    position: relative;
+}
+
+.addProgress {
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 4px 0 0 0;
+    padding: 0 3px;
+    width: 30px;
+    height: 30px;
+    background: #E45A84;
+    border: none;
+    color: white;
+
+}

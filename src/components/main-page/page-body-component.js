@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styles from "./page-body.module.css";
 import MiniStats from "../mini-stats/mini-stats-connector";
+import GoalsList from "../goals-list/goals-list-connector";
 
 class PageBody extends Component {
   render() {
@@ -28,6 +29,7 @@ class PageBody extends Component {
       "Saturday",
       "Sunday"
     ];
+
     return (
       <div className={styles.pageBodyContainer}>
         <div className={styles.panel}>
@@ -36,20 +38,12 @@ class PageBody extends Component {
           </div>
           <MiniStats className={styles.miniStats} />
         </div>
-
         <div className={styles.lists}>
-          <div className={styles.goalsList}>
-            <ul>
-              {" "}
-              <h2>Goals</h2>
-              <li className={styles.listItem}>Learn ES6</li>
-              <li className={styles.listItem}>Practice sketching</li>
-            </ul>
-          </div>
-
           <div className={styles.todos}>
             <h2>To Dos</h2>
           </div>
+
+          <GoalsList />
 
           <div className={styles.extras}>
             <div className={styles.weekly}>

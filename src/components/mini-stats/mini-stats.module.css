@@ -1,7 +1,6 @@
 .miniStats {
   font-size: 26px;
   background: rgb(41, 48, 61);
-  border-radius: 10px;
   color: #fb1;
   margin: 0;
   outline: solid 3px #fb1;
@@ -11,6 +10,7 @@
   flex: 1;
   margin-right: 100px;
   text-align: center;
+  box-shadow: grey 5px 5px 10px;
 }
 
 .listItem {
