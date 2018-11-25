@@ -21,13 +21,13 @@ class PageBody extends Component {
       "December"
     ];
     const days = [
+      "Sunday",
       "Monday",
       "Tuesday",
       "Wednesday",
       "Thursday",
       "Friday",
-      "Saturday",
-      "Sunday"
+      "Saturday"
     ];
 
     return (
