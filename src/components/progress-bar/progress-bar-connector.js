@@ -3,9 +3,7 @@ import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
   const goals = state.goals;
-  const days = state.days;
-  const daysArray = Object.values(days);
-  return { goals, daysArray };
+  return { goals };
 };
 
 export default connect(mapStateToProps)(ProgressBar);

@@ -1,11 +1,11 @@
 export const INCREASE_PROGRESS = 'ADD_PROGRESS';
 
 export const COLOUR_OPTIONS = [
-  { name: 'pink', hex: '#FF85A1' },
-  { name: 'purple', hex: '#8079E8' },
-  { name: 'blue', hex: '#92FFE2' },
-  { name: 'green', hex: '#D4E879' },
-  { name: 'orange', hex: '#FFBF75' }
+  { name: 'pink', hex: '#FF6A93' },
+  { name: 'purple', hex: '#886FE8' },
+  { name: 'blue', hex: '#5DDAFF' },
+  { name: 'yellow', hex: '#FFF66D' },
+  { name: 'orange', hex: '#E89C4D' }
 ];
 
 export function increaseProgress(goalId) {

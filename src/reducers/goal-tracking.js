@@ -7,43 +7,6 @@ const initialGoalsState = [
   { id: 2, name: 'Read for fun', goalRepeats: 3, progress: 0, isFull: false }
 ];
 
-const initialDaysState = {
-  date1: [
-    {
-      id: 1,
-      progress: true
-    },
-    {
-      id: 2,
-      progress: false
-    }
-  ],
-  date2: [
-    {
-      id: 1,
-      name: 'Learn ES6',
-      progress: false
-    },
-    {
-      id: 3,
-      name: 'Drink water',
-      progress: false
-    }
-  ],
-  date3: [
-    {
-      id: 1,
-      name: 'Learn ES6',
-      progress: true
-    },
-    {
-      id: 3,
-      name: 'Drink water',
-      progress: true
-    }
-  ]
-};
-
 const goals = (state = initialGoalsState, action) => {
   switch (action.type) {
     case INCREASE_PROGRESS:
@@ -69,10 +32,6 @@ const goals = (state = initialGoalsState, action) => {
   }
 };
 
-const days = (state = initialDaysState, action) => {
-  return state;
-};
-
-const allReducers = combineReducers({ goals, days });
+const allReducers = combineReducers({ goals });
 
 export default allReducers;
