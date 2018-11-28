@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styles from "./mini-stats.module.css";
+import React, { Component } from 'react';
+import styles from './mini-stats.module.css';
 
 class MiniStats extends Component {
   constructor(props) {
@@ -9,16 +9,16 @@ class MiniStats extends Component {
   }
 
   componentDidMount() {
-    const { daysArray, goalsArray } = this.props;
-    const goalCounters = goalsArray.map(item => {
+    const { daysArray, goals } = this.props;
+    const goalCounters = goals.map(item => {
       return { id: item.id, goal: item.name, value: 0 };
     });
 
     const arrayOfProgress = daysArray.map(day => {
-      for (var i = 0; i < goalsArray.length; i++) {
+      for (var i = 0; i < goals.length; i++) {
         for (var j = 0; j < day.length; j++) {
-          if (goalsArray[i].id === day[j].id && day[j].progress) {
-            return goalsArray[i].id;
+          if (goals[i].id === day[j].id && day[j].progress) {
+            return goals[i].id;
           }
         }
       }
@@ -52,8 +52,20 @@ class MiniStats extends Component {
   render() {
     return (
       <ul className={styles.miniStats}>
-        <li className={styles.listItem}> 💪🏼 Bossing: {this.state.max}</li>
-        <li className={styles.listItem}> 💔 Needs love: {this.state.min}</li>
+        <li className={styles.listItem}>
+          {' '}
+          <span role="img" aria-label="strong arm emoji">
+            💪🏼
+          </span>{' '}
+          Bossing: {this.state.max}
+        </li>
+        <li className={styles.listItem}>
+          {' '}
+          <span role="img" aria-label="broken heart emoji">
+            💔
+          </span>{' '}
+          Needs love: {this.state.min}
+        </li>
       </ul>
     );
   }

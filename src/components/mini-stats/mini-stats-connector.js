@@ -1,12 +1,11 @@
-import MiniStats from "./mini-stats-component";
-import { connect } from "react-redux";
+import MiniStats from './mini-stats-component';
+import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
-  const days = state.goalTracking.days;
-  const goals = state.goalTracking.goals;
+  const days = state.days;
+  const goals = state.goals;
   const daysArray = Object.values(days);
-  const goalsArray = Object.values(goals);
-  return { daysArray, goalsArray };
+  return { daysArray, goals };
 };
 
 export default connect(mapStateToProps)(MiniStats);

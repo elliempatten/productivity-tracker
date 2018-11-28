@@ -1,4 +1,4 @@
-import GoalsList from './goals-list-component';
+import GoalHolder from './goal-holder-component';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
@@ -6,4 +6,4 @@ const mapStateToProps = state => {
   return { goals };
 };
 
-export default connect(mapStateToProps)(GoalsList);
+export default connect(mapStateToProps)(GoalHolder);
