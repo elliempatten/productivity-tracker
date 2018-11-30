@@ -1,10 +1,9 @@
-import GoalsList from "./goals-list-component";
-import { connect } from "react-redux";
+import GoalsList from './goals-list-component';
+import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
-  const goals = state.goalTracking.goals;
-  const goalsArray = Object.values(goals);
-  return { goalsArray };
+  const goals = state.goals;
+  return { goals };
 };
 
 export default connect(mapStateToProps)(GoalsList);
