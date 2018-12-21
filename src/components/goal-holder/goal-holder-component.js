@@ -7,6 +7,11 @@ import ConfettiComponent from '../confetti/confetti-component';
 import Expire from './expire';
 
 class GoalHolder extends Component {
+  shouldComponentUpdate(nextProps) {
+    const differentGoalProgress =
+      this.props.goal.progress !== nextProps.goal.progress;
+    return differentGoalProgress;
+  }
   render() {
     const { goal, colour } = this.props;
     return (
