@@ -1,20 +1,15 @@
-import React, { Component } from "react";
-import styles from "./header-component.module.css";
+import React, { Component } from 'react';
+import styles from './header-component.module.css';
 
-class HeaderBar extends Component{
-  constructor(props){
+class HeaderBar extends Component {
+  constructor(props) {
     super(props);
   }
 
-  
-
-  render(){
-    
-    
-
-  return(
+  render() {
+    return (
       <header className={styles.headerContainer}>
-      <div className={styles.siteTitle}> Buzzzzzz</div>
+        <div className={styles.siteTitle}> Buzzzzzz</div>
         <nav>
           <ul>
             <li className={styles.listItem}> Home</li>
@@ -22,11 +17,9 @@ class HeaderBar extends Component{
             <li className={styles.listItem}>Today</li>
           </ul>
         </nav>
-
       </header>
     );
-}
-
+  }
 }
 export default HeaderBar;
 
