@@ -59,15 +59,11 @@ class PageBody extends Component {
                 <form>
                   <label>What do you want to achieve?</label>
                   <br />
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="eg. Go jogging"
-                  />
+                  <input type="text" name="goal" placeholder="eg. Go jogging" />
                   <br />
                   <label>How many times do you want to do this per week?</label>
                   <br />
-                  <input type="text" name="lastname" placeholder="eg. 5" />
+                  <input type="number" name="repeats" placeholder="eg. 5" />
                   <br />
                   <input type="submit" value="Submit" />
                 </form>
